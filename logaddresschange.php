@@ -2,6 +2,16 @@
 
 require_once 'logaddresschange.civix.php';
 
+function logaddresschange_civicrm_pre($op, $objectName, $id, &$params) {
+  $logger = CRM_Logaddresschange_Logger::singleton();
+  $logger->pre($op, $objectName, $id, $params);
+}
+
+function logaddresschange_civicrm_post($op, $objectName, $id, &$objectRef) {
+  $logger = CRM_Logaddresschange_Logger::singleton();
+  $logger->post($op, $objectName, $id, $objectRef);
+}
+
 /**
  * Implements hook_civicrm_config().
  *
