@@ -19,6 +19,7 @@ class CRM_Logaddresschange_Upgrader extends CRM_Logaddresschange_Upgrader_Base {
       $params['label'] = $label;
       $params['filter'] = 1;
       $params['weight'] = 1;
+      $params['is_active'] = 1;
       civicrm_api3('ActivityType', 'create', $params);
     }
   }
