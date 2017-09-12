@@ -1,0 +1,13 @@
+{
+    "name": "spnl/nl.sp.logaddresschange",
+    "description": "Creates an activity when an address changes",
+    "type": "civicrm-module",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "Jaap Jansma - CiviCooP",
+            "email": "helpdesk@civicoop.org"
+        }
+    ],
+    "require": {}
+}
